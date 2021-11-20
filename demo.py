@@ -6,3 +6,4 @@ def get_int_by_0x(str):
         dec_data = 0 - dec_data
     return dec_data
 print(get_int_by_0x('0xffffffff'))
+# test

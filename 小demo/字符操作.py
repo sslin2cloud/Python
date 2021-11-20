@@ -17,11 +17,11 @@ str = string_sta('afgdsfgkjfklsahdfuihaerjghulsihgi')
 str.sta_print()
 
 # 带符号十六进制转化为十进制
-def get_int_by_0x(str):
+def get_dec_by_hex(str):
     width=32  # 16进制数所占位数
     dec_data=int(str, 16)
     if dec_data > 2 ** (width-1)- 1:
         dec_data = 2 ** width-dec_data
         dec_data = 0 - dec_data
     return dec_data
-print(get_int_by_0x('0xffffffff'))
+print(get_dec_by_hex('0xffffffff'))
